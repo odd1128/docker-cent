@@ -1,0 +1,10 @@
+○dockerイメージ作成
+Dockerfile ruby-install.shを同じディレクトリに配置
+
+cd <Dockerfileのあるディレクトリ>
+
+docker build -t <リポジトリー名>:<タグ名>　.
+
+○コンテナの起動
+docker run -it --name <コンテナ名>　-v <ローカルのディレクトリの絶対パス>:/opt/mailbucket <コンテナイメージ> /bin/bash
+
